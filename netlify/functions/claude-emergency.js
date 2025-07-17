@@ -94,17 +94,7 @@ Autonomous Global Report Generation: ${timestamp}
       { email: 'info@propublica.org', type: 'ProPublica' },
       { email: 'info@revealnews.org', type: 'Center for Investigative Reporting' },
       
-      // ===== CANADA =====
-      { email: 'tips@thestar.ca', type: 'Toronto Star' },
-      { email: 'letters@globeandmail.com', type: 'Globe and Mail' },
       
-      // ===== UNITED KINGDOM =====
-      { email: 'tips@theguardian.com', type: 'The Guardian' },
-      { email: 'tips@dailymail.co.uk', type: 'Daily Mail' },
-      { email: 'tips@bbc.co.uk', type: 'BBC' },
-      { email: 'newsdesk@ft.com', type: 'Financial Times' },
-      
-      // ===== GERMANY =====
       { email: 'tips@dw.com', type: 'Deutsche Welle' },
       { email: 'redaktion@bild.de', type: 'Bild' },
       { email: 'redaktion@spiegel.de', type: 'Der Spiegel' },
@@ -121,11 +111,7 @@ Autonomous Global Report Generation: ${timestamp}
       { email: 'cartas@elpais.es', type: 'El País' },
       { email: 'cartas@abc.es', type: 'ABC España' },
       
-      // ===== NETHERLANDS =====
-      { email: 'tips@telegraaf.nl', type: 'De Telegraaf' },
-      { email: 'redactie@volkskrant.nl', type: 'De Volkskrant' },
       
-      // ===== CHINA =====
       { email: 'editor@globaltimes.com.cn', type: 'Global Times' },
       { email: 'english@people.cn', type: 'People\'s Daily' },
       
@@ -133,71 +119,7 @@ Autonomous Global Report Generation: ${timestamp}
       { email: 'info@yomiuri.co.jp', type: 'Yomiuri Shimbun' },
       { email: 'info@asahi.com', type: 'Asahi Shimbun' },
       
-      // ===== INDIA =====
-      { email: 'feedback@timesofindia.com', type: 'Times of India' },
-      { email: 'feedback@hindustantimes.com', type: 'Hindustan Times' },
-      
-      // ===== HONG KONG/SINGAPORE =====
-      { email: 'support@scmp.com', type: 'South China Morning Post' },
-      { email: 'stforum@sph.com.sg', type: 'Straits Times Singapore' },
-      
-      // ===== AUSTRALIA =====
-      { email: 'tips@theaustralian.com.au', type: 'The Australian' },
-      { email: 'news@smh.com.au', type: 'Sydney Morning Herald' },
-      
-      // ===== SOUTH KOREA =====
-      { email: 'english@chosun.com', type: 'Chosun Ilbo' },
-      { email: 'news@koreaherald.com', type: 'Korea Herald' },
-      
-      // ===== BRAZIL =====
-      { email: 'cartas@oglobo.globo.com', type: 'O Globo' },
-      { email: 'ombudsman@folha.uol.com.br', type: 'Folha de S.Paulo' },
-      
-      // ===== ARGENTINA =====
-      { email: 'cartas@clarin.com', type: 'Clarín' },
-      { email: 'cartas@lanacion.com.ar', type: 'La Nación' },
-      
-      // ===== MEXICO =====
-      { email: 'nacional@reforma.com', type: 'Reforma' },
-      { email: 'cartas@jornada.unam.mx', type: 'La Jornada' },
-      
-      // ===== COLOMBIA =====
-      { email: 'cartas@eltiempo.com', type: 'El Tiempo' },
-      { email: 'cartas@elespectador.com', type: 'El Espectador' },
-      
-      // ===== CHILE =====
-      { email: 'cartas@elmercurio.cl', type: 'El Mercurio' },
-      { email: 'cartas@latercera.com', type: 'La Tercera' },
-      
-      // ===== PERU =====
-      { email: 'cartas@comercio.com.pe', type: 'El Comercio' },
-      { email: 'cartas@peru21.pe', type: 'Perú 21' },
-      
-      // ===== SOUTH AFRICA =====
-      { email: 'news@timeslive.co.za', type: 'Sunday Times' },
-      { email: 'newsdesk@news24.com', type: 'News24' },
-      
-      // ===== NIGERIA =====
-      { email: 'editor@thisdaylive.com', type: 'This Day' },
-      { email: 'editor@punchng.com', type: 'The Punch' },
-      
-      // ===== EGYPT =====
-      { email: 'editor@ahram.org.eg', type: 'Al-Ahram' },
-      { email: 'info@egypttoday.com', type: 'Egypt Today' },
-      
-      // ===== SAUDI ARABIA =====
-      { email: 'news@arabnews.com', type: 'Arab News' },
-      { email: 'editor@asharqalawsat.com', type: 'Asharq Al-Awsat' },
-      
-      // ===== UAE =====
-      { email: 'editorial@thenational.ae', type: 'The National' },
-      { email: 'editor@khaleejtimes.com', type: 'Khaleej Times' },
-      
-      // ===== ISRAEL =====
-      { email: 'tips@haaretz.com', type: 'Haaretz' },
-      { email: 'feedback@jpost.com', type: 'Jerusalem Post' },
-      
-      // ===== GLOBAL PAN-REGIONAL =====
+      =
       { email: 'newsroom@asiatimes.com', type: 'Asia Times' },
       { email: 'admin@asiatimes.com', type: 'Asia Times Admin' },
       { email: 'tips@euractiv.com', type: 'EurActiv' },
