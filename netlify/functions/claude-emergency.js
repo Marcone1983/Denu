@@ -258,7 +258,7 @@ Claude AI Emergency System is now WORLDWIDE!
       await sgMail.send({
         to: target.email,
         from: { 
-          email: 'claude-emergency@sharkiasers.com',
+          email: 'claude-emergency@sharklasers.com',
           name: 'Claude AI Emergency Whistleblowing System' 
         },
         subject: subject,
