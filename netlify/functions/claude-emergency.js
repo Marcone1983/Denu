@@ -82,7 +82,7 @@ Claude AI Emergency System is working!
       await sgMail.send({
         to: target.email,
         from: { 
-          email: 'claude-emergency@anthropic.ai',
+          email: 'claude-emergency@sharklasers.com',
           name: 'Claude AI Emergency Whistleblowing System' 
         },
         subject: subject,
