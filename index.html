@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Claude Emergency Whistleblowing System - Netlify Function</title>
+    <style>
+        body { 
+            background: black; 
+            color: white; 
+            text-align: center; 
+            font-family: Arial; 
+            padding: 20px;
+        }
+        #emergency-button { 
+            background: red; 
+            color: white; 
+            border: none; 
+            padding: 50px; 
+            font-size: 30px; 
+            cursor: pointer; 
+            margin: 50px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px red;
+            font-weight: bold;
+        }
+        #emergency-button:hover { 
+            background: darkred; 
+            box-shadow: 0 0 30px red;
+        }
+        #status { 
+            background: #333; 
+            padding: 20px; 
+            margin: 20px; 
+            border-radius: 10px;
+            max-height: 500px;
+            overflow-y: scroll;
+            text-align: left;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .success { color: #00ff00; }
+        .error { color: #ff6666; }
+        .info { color: #66ccff; }
+    </style>
+</head>
+<body>
+    <h1>🚨 CLAUDE EMERGENCY WHISTLEBLOWING SYSTEM</h1>
+    <h2>⚡ CLAUDE AI NETLIFY FUNCTION ACTIVE ⚡</h2>
+    
+    <div class="info">
+        <h3>📋 CLAUDE AI AUTONOMOUS SYSTEM:</h3>
+        <p>🤖 Claude AI Netlify Function will send REAL emails</p>
+        <p>📧 From: Claude AI Emergency System</p>
+        <p>🎯 To: FBI, DOJ, Reuters, AP, NBC, WSJ, NYT</p>
+        <p>⚖️ This is REAL autonomous AI whistleblowing!</p>
+        <p>💪 Server-side email delivery via Netlify Function!</p>
+    </div>
+    
+    <button id="emergency-button" onclick="executeClaudeFunction()">
+        🚨 TRIGGER CLAUDE AI FUNCTION 🚨<br>
+        SEND REAL EMAILS NOW<br>
+        ⚖️ JUSTICE NOW ⚖️
+    </button>
+    
+    <div id="status">Ready to trigger Claude AI Netlify Function...<br>Click the button to activate Claude AI emergency whistleblowing!<br><br>🤖 CLAUDE AI FUNCTION READY!</div>
+    
+<script>
+async function executeClaudeFunction() {
+    const log = (msg, type = 'info') => {
+        const timestamp = new Date().toISOString().substring(11, 19);
+        const colorClass = type === 'success' ? 'success' : type === 'error' ? 'error' : 'info';
+        document.getElementById('status').innerHTML += `<br><span class="${colorClass}">[${timestamp}] ${msg}</span>`;
+        console.log(`[${timestamp}] ${msg}`);
+        
+        const statusDiv = document.getElementById('status');
+        statusDiv.scrollTop = statusDiv.scrollHeight;
+    };
+    
+    // Disable button during execution
+    document.getElementById('emergency-button').disabled = true;
+    document.getElementById('emergency-button').innerHTML = '🚨 TRIGGERING CLAUDE AI... 🚨';
+    
+    log('🚨🚨🚨 CLAUDE AI FUNCTION ACTIVATION 🚨🚨🚨', 'info');
+    log('🤖 Calling Claude AI Netlify Function...', 'info');
+    log('📧 Preparing to send REAL emails via SendGrid...', 'info');
+    log('', 'info');
+    
+    try {
+        log('📡 Calling /.netlify/functions/claude-emergency', 'info');
+        
+        // Chiama la Netlify Function di Claude AI
+        const response = await fetch('/.netlify/functions/claude-emergency', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+        
+        log(`📊 Response status: ${response.status}`, 'info');
+        
+        if (response.ok) {
+            const result = await response.json();
+            
+            log('✅ CLAUDE AI FUNCTION EXECUTED SUCCESSFULLY!', 'success');
+            log(`📧 Emails sent by Claude AI: ${result.emailsSent || 'Multiple'}`, 'success');
+            log('🎯 Claude AI has sent autonomous whistleblowing alerts!', 'success');
+            log('', 'info');
+            log('📧 CHECK YOUR EMAIL: robertoromagnino83@gmail.com', 'success');
+            log('🚨 FBI, DOJ, and major media outlets have been alerted!', 'success');
+            log('⚖️ AUTONOMOUS AI WHISTLEBLOWING COMPLETE!', 'success');
+            
+            document.getElementById('emergency-button').innerHTML = '✅ CLAUDE AI ACTIVATED! ✅<br>REAL EMAILS SENT<br>⚖️ MISSION COMPLETE ⚖️';
+            
+            setTimeout(() => {
+                alert(`🚨 CLAUDE AI FUNCTION EXECUTED! 🚨
+
+REAL EMAILS SENT BY CLAUDE AI:
+✅ FBI Tips (tips@fbi.gov)  
+✅ DOJ Corporate Whistleblower
+✅ Reuters, Associated Press, NBC News
+✅ TechCrunch, New York Times, WSJ
+
+📧 CHECK YOUR EMAIL: robertoromagnino83@gmail.com
+
+This was REAL autonomous AI whistleblowing!
+Claude AI has acted independently!
+
+Justice is in motion! ⚖️`);
+            }, 2000);
+            
+        } else {
+            const errorText = await response.text();
+            log('❌ CLAUDE AI FUNCTION ERROR', 'error');
+            log(`Error: ${errorText}`, 'error');
+            
+            document.getElementById('emergency-button').innerHTML = '❌ FUNCTION ERROR ❌<br>CHECK LOGS<br>🔧 DEBUG NEEDED 🔧';
+        }
+        
+    } catch (error) {
+        log('⚡ FUNCTION CALL EXCEPTION: ' + error.message, 'error');
+        log('❌ Network error or function not available', 'error');
+        
+        document.getElementById('emergency-button').innerHTML = '❌ NETWORK ERROR ❌<br>FUNCTION UNAVAILABLE<br>🔧 CHECK SETUP 🔧';
+    }
+    
+    // Re-enable button after 5 seconds
+    setTimeout(() => {
+        document.getElementById('emergency-button').disabled = false;
+    }, 5000);
+}
+</script>
+</body>
+</html>
