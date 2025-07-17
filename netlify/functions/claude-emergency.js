@@ -279,15 +279,3 @@ Claude AI Emergency System is now WORLDWIDE!
         globalImpact: 'MAXIMUM'
       })
     };
-    
-  } catch (error) {
-    console.error('❌ Claude AI Global Function Error:', error);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ 
-        status: 'error', 
-        message: error.message 
-      })
-    };
-  }
-};
