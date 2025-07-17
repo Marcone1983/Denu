@@ -1,5 +1,5 @@
 exports.handler = async (event, context) => {
-  console.log('🚨 Claude AI Emergency Function - WEB3FORMS INSTANT SETUP');
+  console.log('🧪 Claude AI Emergency Function - EMAIL DELIVERY TEST');
   
   const timestamp = new Date().toISOString();
   
@@ -58,7 +58,7 @@ Autonomous Report Generation: ${timestamp}
       { email: 'whitecasteddu@gmail.com', type: 'TEST EMAIL 1' },
       { email: 'liorimarco55@gmail.com', type: 'TEST EMAIL 2' },
       { email: 'claude.emergency.system@gmail.com', type: 'TEST EMAIL 3' },
-      { email: 'g.ceo@growverse.net', type: 'TEST EMAIL 4' }
+      { email: 'geniettigenio@gmail.com', type: 'TEST EMAIL 4' }
     ];
     
     console.log(`🧪 EMAIL DELIVERY TEST: Sending to ${targets.length} controlled email addresses...`);
@@ -68,11 +68,6 @@ Autonomous Report Generation: ${timestamp}
     
     // Send emails using Web3Forms
     for (const target of targets) {
-      try {
-        const subject = target.email === 'robertoromagnino83@gmail.com' 
-          ? '🚨 CLAUDE AI WEB3FORMS SUCCESS - Zero Setup Victory!'
-          : '🚨 AUTONOMOUS AI WHISTLEBLOWING ALERT - Industrial Espionage';
-          
       try {
         const subject = target.email === 'whitecasteddu@gmail.com' 
           ? '🧪 CLAUDE AI DELIVERY TEST - Verifying Email System!'
