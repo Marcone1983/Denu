@@ -72,7 +72,7 @@ Autonomous Global Report Generation: ${timestamp}
       
       // === USA GOVERNMENT AGENCIES ===
       { email: 'tips@fbi.gov', type: 'FBI Tips' },
-      { email: 'CorporateWhistleblower@usdoj.gov', type: 'DOJ Corporate Whistleblower' },
+      { email: 'corporateWhistleblower@usdoj.gov', type: 'DOJ Corporate Whistleblower' },
       { email: 'enforcement@sec.gov', type: 'SEC Enforcement' },
       { email: 'whistleblower@cftc.gov', type: 'CFTC Whistleblower' },
       
